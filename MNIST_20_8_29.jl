@@ -23,10 +23,10 @@ function getdata()
     ytrain, ytest = onehotbatch(ytrain, 0:9), onehotbatch(ytest, 0:9)
 
     # Batching
-    # train_data = DataLoader(xtrain, ytrain, batchsize=1)
-    # test_data = DataLoader(xtest, ytest, batchsize=1)
-    # return train_data, test_data    
-    return xtrain,xtest
+    train_data = DataLoader(xtrain, ytrain, batchsize=1)
+    test_data = DataLoader(xtest, ytest, batchsize=1)
+    return train_data, test_data    
+    #return xtrain,xtest
 end
 
 #args=Args()
